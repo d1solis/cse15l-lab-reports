@@ -1,7 +1,7 @@
 # Tutorial: How to log into a course-specific account on ieng6
 This is a lab report about remote access and is a tutorial for incoming 15L students 
 (and my future self!) about how to log into a course-specific account on ieng6. There
-are about 6 parts to this tutorial:
+are about 3 parts to this tutorial:
 
 ## 1. Installing Visual Studio Code
 
