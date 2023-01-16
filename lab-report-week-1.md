@@ -12,7 +12,7 @@ instructions to get the program on your computer.
 Attached is an image of what the program looks like when you first open it up (which can look different depending on the 
 theme the program was set to).
 
-![Screenshot(40).png](https://github.com/d1solis/cse15l-lab-reports/blob/main/Screenshot%20(40).png)
+![Screenshot(40).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshot%20(40).png)
 
 
 ## 2. Remotely Connecting
