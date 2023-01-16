@@ -9,10 +9,10 @@ First, we will install VScode **(if not already installed you may skip this step
 Use this website if necessary [https://code.visualstudio.com/](https://code.visualstudio.com/) and follow the 
 instructions to get the program on your computer.
 
-Attached is what the program looks like when you first open it up (which can look different depending on the 
+Attached is an image of what the program looks like when you first open it up (which can look different depending on the 
 theme the program was set to).
 
-![Image](http://url/a.png)
+![Image]([http://url/a.png](https://github.com/d1solis/cse15l-lab-reports-1/blob/main/Screenshot%20(40).png))
 
 
 ## 2. Remotely Connecting
@@ -23,9 +23,9 @@ Then this message will most likely appear if this is your first time connecting 
 `Are you sure you want to continue connecting (yes/no/[fingerprint])?`, just be sure to type in `yes` and press enter.
 Afterwards, make sure to type in your password when asked. Now your terminal has been successfully connected to a remote server!
 
-Attached is what the program looks like when you have been connected.
+Attached is an image of what the program looks like when you have been connected.
 
-![Image](http://url/a.png)
+![Image](https://github.com/d1solis/cse15l-lab-reports-1/blob/main/Screenshot%20(41).pnghttp://url/a.png)
 
 
 ## 3. Running Some Commands
@@ -39,6 +39,6 @@ Next, we will try running some commands to get a glimpse of what we can do on th
 * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
 * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
 
-Attached is what the program looks like when you use some of the commands from above.
+Attached is an image of what the program looks like when you use some of the commands from above.
 
-![Image](http://url/a.png)
+![Image]([http://url/a.png](https://github.com/d1solis/cse15l-lab-reports-1/blob/main/Screenshot%20(42).png))
