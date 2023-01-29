@@ -31,13 +31,19 @@ Attached is an image of what the program looks like when you have been connected
 ## 3. Running Some Commands
 
 Next, we will try running some commands to get a glimpse of what we can do on the server. Here is a list of commands you should try!
-* `cd ~`
-* `cd`
-* `ls -lat`
+* `cd ~` 
+  * To change the current working directory to the given path, `~` meaning the home directory path
+* `cd` 
+  * To change the current working directory, " **c**hange **d**irectory"
+* `ls -lat` 
+  * To list all of the file contents and folders to the given path, `-lat` meaning sorting files by last modification in a long format including hidden files and directories
 * `ls -a`
+  * To list all of the file contents and folders to the given path, `-a` meaning to list hidden files and directories
 * `ls <directory>` where `<directory>` is `/home/linux/ieng6/cs15lwi23/cs15lwi23xyz`, where the `xyz` is one of the other group members’ username
 * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
+  * To copy files and directories 
 * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
+  * To print the contents of one or more given files give by the paths
 
 Attached is an image of what the program looks like when you use some of the commands from above.
 
