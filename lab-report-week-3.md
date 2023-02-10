@@ -49,7 +49,7 @@ class StringServer {
 
 Attached are the screenshots for `/add-message`:
 
-![Screenshot(78).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshot%20(78).png)
+![Screenshot(78).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshots%20Folder/Screenshot%20(78).png)
 - Which methods in your code are called?
   - handleRequest
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
@@ -57,7 +57,7 @@ Attached are the screenshots for `/add-message`:
 - How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
   - When handleRequest is called, "Hello" is being added to `String serverString`.
 
-![Screenshot(79).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshot%20(79).png)
+![Screenshot(79).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshots%20Folder/Screenshot%20(79).png)
 - Which methods in your code are called?
   - handleRequest
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
@@ -100,7 +100,7 @@ An input that doesn’t induce a failure, as a JUnit test and any associated cod
 ```
 
 The symptom, as the output of running the tests.
-![Screenshot(60).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshot%20(60).png)
+![Screenshot(60).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshots%20Folder/Screenshot%20(60).png)
 
 The bug, as the before-and-after code change required to fix it.
 
