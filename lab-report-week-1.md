@@ -12,7 +12,7 @@ instructions to get the program on your computer.
 Attached is an image of what the program looks like when you first open it up (which can look different depending on the 
 theme the program was set to).
 
-![Screenshot(40).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshot%20(40).png)
+![Screenshot(40).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshots%20Folder/Screenshot%20(40).png)
 
 
 ## 2. Remotely Connecting
@@ -25,7 +25,7 @@ Afterwards, make sure to type in your password when asked. Now your terminal has
 
 Attached is an image of what the program looks like when you have been connected.
 
-![Screenshot(41).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshot%20(41).png)
+![Screenshot(41).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshots%20Folder/Screenshot%20(41).png)
 
 
 ## 3. Running Some Commands
@@ -47,4 +47,4 @@ Next, we will try running some commands to get a glimpse of what we can do on th
 
 Attached is an image of what the program looks like when you use some of the commands from above.
 
-![Screenshot(42).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshot%20(42).png)
+![Screenshot(42).png](https://raw.githubusercontent.com/d1solis/cse15l-lab-reports/main/Screenshots%20Folder/Screenshot%20(42).png)
