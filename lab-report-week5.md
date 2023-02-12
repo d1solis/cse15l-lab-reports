@@ -123,7 +123,35 @@ written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
 ```
 This command is searching for the word "pineapples" in all `.txt` files in any immediate subdirectories of the `written_2/` directory, and printing only the names of the files that contain the word "pineapples", regardless if it is upper case or lower case. This command is useful if you want to perform a search that's not case-sensitive and simply looking for the files containing the word or phrase without having to read the text along with it.
 
-## Third command: `grep -c`
+## Third command: `grep -n`
+The `grep -n` command is used to display the line number of each matching line in the output when searching for a pattern in a file or a set of files
+1. Example `grep -n "mango" written_2/*/*/*.txt` outputs this:
+```
+written_2/travel_guides/berlitz1/IntroMadeira.txt:33:        mangoes, passion fruit, watermelons, and avocados.
+written_2/travel_guides/berlitz1/WhereToIndia.txt:1025:        terraced fields and mango groves over the deepest ravines to the
+written_2/travel_guides/berlitz1/WhereToIndia.txt:1831:        branches of mangoes. The friezes are more sophisticated, showing
+written_2/travel_guides/berlitz1/WhereToIndia.txt:2138:        streams of the Cauvery river, past groves of mango trees, sugar cane
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt:687:        jungle fruit are mango, durian, rambutan, and wild banana. At over
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt:76:Start your explorations by driving west on the autopista (highway) linking Havana with the province’s capital city of Pinar del Río. About 63 km (39 miles) along the highway, a turnoff leaves the level, palm-dotted plains for Soroa, where a richly endowed botanical garden nestles in the mountain foothills near a tired little tourist complex. A guided tour reveals an orchid garden, lychee and mango trees, coffee plants, and splendid specimens of jagüey and ceiba trees. A restaurant in the villa of Castillo de las Nubes on a nearby mountain has stunning views.
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:41:Manzanillo has an enticingly tropical geography, comprised of vast groves of tall palms, abundant mango trees, and successive coves graced with smooth sand beaches. To the north, mountains blanketed with palms rise alongside the shoreline. And over it all lies the veneer of perfect weather — balmy temperatures and year-round sea breezes. Even the approach by plane into Manzanillo showcases the promise of a perfect vacation — you fly in over the beach and golf course.
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:68:A countryside visit to Barra de Potosí, located 21 km (14 miles) south of Zihuatanejo offers a chance to see a small fishing village, coconut and mango plantations, and a lagoon known for the numerous tropical birds that inhabit it.
+```
+This command is searching for the word "mango" in all `.txt` files in any immediate subdirectories of the `written_2/` directory, and printing all the lines that contain the word "mango", along with their line numbers. This command is useful when you want to quickly find the line numbers for a particular search pattern in multiple files.
+
+2. Example `grep -n -h "mango" written_2/*/*/*.txt` outputs this:
+```
+33:        mangoes, passion fruit, watermelons, and avocados.
+1025:        terraced fields and mango groves over the deepest ravines to the
+1831:        branches of mangoes. The friezes are more sophisticated, showing
+2138:        streams of the Cauvery river, past groves of mango trees, sugar cane
+687:        jungle fruit are mango, durian, rambutan, and wild banana. At over
+76:Start your explorations by driving west on the autopista (highway) linking Havana with the province’s capital city of Pinar del Río. About 63 km (39 miles) along the highway, a turnoff leaves the level, palm-dotted plains for Soroa, where a richly endowed botanical garden nestles in the mountain foothills near a tired little tourist complex. A guided tour reveals an orchid garden, lychee and mango trees, coffee plants, and splendid specimens of jagüey and ceiba trees. A restaurant in the villa of Castillo de las Nubes on a nearby mountain has stunning views.
+41:Manzanillo has an enticingly tropical geography, comprised of vast groves of tall palms, abundant mango trees, and successive coves graced with smooth sand beaches. To the north, mountains blanketed with palms rise alongside the shoreline. And over it all lies the veneer of perfect weather — balmy temperatures and year-round sea breezes. Even the approach by plane into Manzanillo showcases the promise of a perfect vacation — you fly in over the beach and golf course.
+68:A countryside visit to Barra de Potosí, located 21 km (14 miles) south of Zihuatanejo offers a chance to see a small fishing village, coconut and mango plantations, and a lagoon known for the numerous tropical birds that inhabit it.
+```
+This command is searching for all files with a `.txt` extension inside any immediate subdirectories of the `written_2/` directory, and prints all the lines that contain the word "mango", along with their line numbers. The `-h` command tells grep not to print the file names in the output. This command is useful if you do not need to see the file names in the output, and just want to focus on the lines that match the search pattern.
+
+## Fourth command: `grep -c`
 The `grep -c` command is used to count the number of times a pattern appears in a file or a set of files.
 1. Example `grep -c "tourist" written_2/*/*/*.txt` outputs this:
 ```
@@ -491,4 +519,4 @@ written_2/travel_guides/berlitz2/Vallarta-History.txt:38
 written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:82
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:140
 ```
-This command is searching for all files with a `.txt` extension inside any immediate subdirectories of `written_2/` directory, and counts the number of lines in those files that DO NOT contain the word "tourist". This command is useful if you want to count the number of lines that do not match a particular search pattern in multiple files.
+This command is searching for all files with a `.txt` extension inside any immediate subdirectories of `written_2/` directory, and counts the number of lines in those files that DO NOT contain the word "tourist" from the `v` command which is used to invert the search and print all lines that do not match the search pattern. This command is useful if you want to count the number of lines that do not match a particular search pattern in multiple files.
