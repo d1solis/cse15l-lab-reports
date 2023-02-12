@@ -519,4 +519,15 @@ written_2/travel_guides/berlitz2/Vallarta-History.txt:38
 written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:82
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:140
 ```
-This command is searching for all files with a `.txt` extension inside any immediate subdirectories of `written_2/` directory, and counts the number of lines in those files that DO NOT contain the word "tourist" from the `v` command which is used to invert the search and print all lines that do not match the search pattern. This command is useful if you want to count the number of lines that do not match a particular search pattern in multiple files.
+This command is searching for all files with a `.txt` extension inside any immediate subdirectories of `written_2/` directory, and counts the number of lines in those files that DO NOT contain the word "tourist" from the `-v` command which is used to invert the search and print all lines that do not match the search pattern. This command is useful if you want to count the number of lines that do not match a particular search pattern in multiple files.
+
+
+## Sources Cited:
+1. [grep(1) — Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
+2. [grep command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+3. [Grep Command in Linux/UNIX](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
+4. [15 Practical Grep Command Examples In Linux / UNIX](https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/)
+5. [How To Use grep Command In Linux / UNIX With Practical Examples](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
+6. [Common Examples of the Grep Command in Linux [With Free Cheatsheet Download]](https://linuxhandbook.com/grep-command-cheatsheet/)
+7. [How To Use grep Command In Linux/UNIX](https://phoenixnap.com/kb/grep-command-linux-unix-examples)
+8. [ChatGPT](https://openai.com/blog/chatgpt/)
