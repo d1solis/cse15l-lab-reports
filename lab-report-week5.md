@@ -4,7 +4,7 @@
 The `grep` command takes a string and a file, and print out all the lines in that file that match the string. (The command to search for a pattern in text files).
 
 ## First command: `grep -l`
-The `grep -l` option is used to print only the names of the files that contain the specified search pattern, instead of printing the matching lines.
+The `grep -l` command is used to print only the names of the files that contain the specified search pattern, instead of printing the matching lines.
 1. Example `grep -l "explore" written_2/*/*/*.txt` outputs this:
 ```
 written_2/travel_guides/berlitz1/HandRJamaica.txt
@@ -102,3 +102,23 @@ printing the names of the files that contain the word "Lucayans". This command i
 a particular word or phrase in a large project with many text files.
 
 ## Second command: `grep -i`
+The `grep -i` command is used to perform a case-insensitive search when searching for a pattern in text files.
+1. Example `grep -i "pineapples" written_2/*/*/*.txt` outputs this:
+```
+written_2/travel_guides/berlitz1/HistoryHawaii.txt:        Pineapples and War
+written_2/travel_guides/berlitz1/WhereToFWI.txt:        emporium you’ll have your pick of fresh Martinique pineapples, coconut
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        of rambutans, pineapples, and bananas, as well as locally made nougat
+written_2/travel_guides/berlitz2/China-History.txt:Conservatism and hostility to foreign ideas, however, couldn’t be absolutely maintained. During the Ming era, China imported tobacco, pineapples, peanuts, and syphilis. Thanks to the emancipated Confucian tradition, Christian missionaries were usually welcomed, although they hardly achieved mass conversions. From the Jesuits the Chinese learned mathematics and astronomy; the old observatory still stands in downtown Beijing.
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt:Ice cream, fruit, cheese, or flan (crème caramel) are the most popular desserts. In the summer and early autumn you will be spoiled with an enormous array of fruit. The weekly markets — the best place to buy — are full of strawberries, nísperos (a cousin of the lychee), grapes, figs, melons, peaches, apricots, raspberries, pomegranates, grapefruit, lemons, oranges, tangerines, apples, pears, and even locally grown bananas, pineapples, and dates.
+```
+This command is searching for the word "pineapples" in all .txt files in any immediate subdirectories of the `written_2/` directory, and printing all the lines that contain the word "pineapples", regardless if it is upper case or lower case. This command is useful if you want to perform a search that's not case-sensitive, and you do not want to have to search for all possible variations of the word.
+
+2. Example `grep -i -l "pineapples" written_2/*/*/*.txt` outputs this:
+```
+written_2/travel_guides/berlitz1/HistoryHawaii.txt
+written_2/travel_guides/berlitz1/WhereToFWI.txt
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+written_2/travel_guides/berlitz2/China-History.txt
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+```
+This command is searching for the word "pineapples" in all .txt files in any immediate subdirectories of the `written_2/` directory, and printing only the names of the files that contain the word "pineapples", regardless if it is upper case or lower case. This command is useful if you want to perform a search that's not case-sensitive and simply looking for the files containing the word or phrase without having to read the text along with it.
