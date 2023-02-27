@@ -1,5 +1,15 @@
 # Lab Report 4 - CLDQ (Week 7)
 This is a lab report of me reproducing the task from the competition on my own using only steps 4-9.
+These are the full steps from the lab challenge tasks for week 7:
+1. Setup Delete any existing forks of the repository you have on your account
+2. Setup Fork the repository
+3. The real deal Start the timer!
+4. Log into ieng6
+5. Clone your fork of the repository from your Github account
+6. Run the tests, demonstrating that they fail
+7. Edit the code file to fix the failing test
+8. Run the tests, demonstrating that they now succeed
+9. Commit and push the resulting change to your Github account
 
 ## Step 4. - Log into ieng6
 - I typed `ssh cs15lwi23auk@ieng6.ucsd.edu` and pressed `<enter>` which resulted in the following two screenshots below.
