@@ -34,7 +34,7 @@ written_2/travel_guides/berlitz2/PuertoRico-History.txt
 written_2/travel_guides/berlitz2/Vallarta-History.txt
 ```
 This command is searching the directory `written_2` and its subdirectories for any file with a name that ends with `-History.txt` and will display the path 
-to each matching file it finds. This command is useful if you are locating specific a file name ending in `.txt` in a directory with a large amount of files.
+to each matching file it finds. This command is useful if you are locating specific file names ending in `.txt` in a directory with a large amount of files.
 
 2. Example `find written_2 -name "*Cancun*"` outputs this:
 ```
@@ -43,5 +43,38 @@ written_2/travel_guides/berlitz2/Cancun-WhatToDo.txt
 written_2/travel_guides/berlitz2/Cancun-WhereToGo.txt
 ```
 This command is searching the directory `written_2` and its subdirectories for any file with a name that starts with `Cancun` and will display the path 
-to each matching file it finds. This command is useful if you are locating specific a file name starting with particular word in a directory with a large 
+to each matching file it finds. This command is useful if you are locating specific files name starting with particular word in a directory with a large 
 amount of files.
+
+## Second command: `find [path] -size [filename]`
+The `find [path] -size [filename]` command is used to search for files based on their size.
+1. Example `find written_2 -size +100k` outputs this:
+```
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/travel_guides/berlitz1/WhereToFrance.txt
+written_2/travel_guides/berlitz1/WhereToIndia.txt
+written_2/travel_guides/berlitz1/WhereToItaly.txt
+written_2/travel_guides/berlitz1/WhereToJapan.txt
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
+```
+This command is searching the directory `written_2` and its subdirectories that are **greater** than 100 kilobytes in size. This command is useful if you need to look
+for files with a specific size and manage them accordingly (moving, archiving, deleting). 
+
+
+1. Example `find written_2 -size -1500c` outputs this:
+```
+written_2/travel_guides/berlitz1/HandRHongKong.txt
+written_2/travel_guides/berlitz1/HandRIbiza.txt
+written_2/travel_guides/berlitz1/HandRIstanbul.txt
+written_2/travel_guides/berlitz1/HandRJerusalem.txt
+written_2/travel_guides/berlitz1/HandRLisbon.txt
+written_2/travel_guides/berlitz1/HandRLosAngeles.txt
+written_2/travel_guides/berlitz1/HandRMadeira.txt
+written_2/travel_guides/berlitz1/HandRMallorca.txt
+```
+This command is searching the directory `written_2` and its subdirectories that are **less** than 1500 bytes in size. This command is useful if you need to look
+for files with a specific size and manage them accordingly (moving, archiving, deleting).
